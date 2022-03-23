@@ -1,0 +1,2 @@
+ create table user (userid bigint not null, city varchar(255), dob date, email varchar(255), fname varchar(255), gender varchar(255), is_account_non_expired boolean not null, is_account_non_locked boolean not null, is_credentials_non_expired boolean not null, is_enabled boolean not null, lname varchar(255), phone varchar(255), pwd varchar(255), roles varchar(255)  default 'ROLE_USER', sq integer not null, sqa varchar(255), primary key (userid));
+create sequence hibernate_sequence start with 1 increment by 1;

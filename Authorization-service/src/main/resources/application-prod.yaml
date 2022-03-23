@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: root
+    url: jdbc:h2:mem:as
+    password: ENC(rAYaQjYJzEh3KXEtLyCJEMmOUVIFRbSL4PsZCwG+9PCI5fNboLeCC66U+VMqVUvi)
+  h2:
+    console:
+      enabled: 'true'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+  application:
+    name: authorization-service
+logging:
+  pattern:
+    console: '%d{dd-MM-yyy hh:mm:ss a} %c  %M  %m%n'
+server:
+  port: '8080'
+  error:
+    include-stacktrace: never
